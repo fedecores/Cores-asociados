@@ -1,9 +1,9 @@
 :root {
     --main-bg-color: rgb(217, 217, 217);
-    --main-bg-color-alt: rgb(168, 168, 168);
-    --main-bg-color-alt-2: rgba(243, 243, 243, 0.965);
+    --main-bg-color-alt: rgb(230, 230, 230);
+    --main-bg-color-alt-2: rgba(178, 178, 178, 0.965);
     --main-text-color: rgb(15, 0, 93);
-    --main-text-color-2: rgb(168, 168, 168);
+    --main-text-color-2: rgb(139, 138, 138);
 }
 
 body {
@@ -122,6 +122,8 @@ html {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 
 
     
@@ -137,25 +139,31 @@ html {
     font-weight: bold;
     font-size: 1em;
     overflow: hidden;
-    color: white;
+    color: var(--main-text-color);
     padding-left: 40px;
     padding-right: 40px;
 
 }
 
-.span
+.texto--nuevo
 {
-    color: white;
-    background-color: var(--main-bg-color-alt);
-    
+    color: var(--main-text-color);
 }
 
-.span_alt
+.span
 {
-    color: var(--main-bg-color-alt);
+    color: var(--main-bg-color-alt-2);
     background-color: white;
     
 }
+
+.span--alt
+{
+    color: white;
+    background-color: var(--main-bg-color-alt-2);
+    
+}
+
 
 .bloque--nuevo
 {
@@ -164,14 +172,12 @@ html {
 
 .bloque--central
 {
-    background-color:var(--main-bg-color-alt-2);
+    background-color:var(--main-bg-color-alt);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-
-.texto--nuevo
-{
-    color: var(--main-text-color-2);
-}
 
 .imagen 
 {
@@ -183,10 +189,19 @@ html {
     padding-bottom: 15px;
 }
 
+.imagen--icon 
+{
+    height: 50%;
+    width: 25%;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+
 .footer 
-{   background-color: var(--main-bg-color); 
+{   background-color: var(--main-bg-color-alt-2); 
     color: #fff; 
-    padding: 20px; 
+    padding: 40px; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -200,15 +215,14 @@ html {
 {  
     color: var(--main-text-color);
     font-family: "Lato", sans-serif;
-    font-size: small;
+    font-size:smaller;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     text-decoration: none;
     display: block;
     justify-content: space-between;
     word-spacing: 5px;
-
-
+    text-align: center;
 } 
 
 .footer-links ul 
@@ -216,6 +230,7 @@ html {
     list-style: none;
     margin: 0;
     display: flex;
+    padding-bottom: 15px;
 
     
 }
@@ -248,7 +263,20 @@ html {
 
 .redes
 {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 
+.footer h2
+{  
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size:xx-small;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: block;
+    justify-content: space-between;
+    word-spacing: 5px;
+    text-align: center;
+} 
