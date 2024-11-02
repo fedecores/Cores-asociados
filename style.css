@@ -203,13 +203,19 @@ html {
     color: #fff; 
     padding: 40px; 
     display: flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center; 
-    width: 100%;
     flex-direction: column;
+    width: 100%;
 
 
 } 
+
+.footer-links 
+{ 
+    display: flex; 
+    align-items: center; 
+}
 
 .footer a
 {  
@@ -219,10 +225,7 @@ html {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration: none;
-    display: block;
-    justify-content: space-between;
-    word-spacing: 5px;
-    text-align: center;
+    
 } 
 
 .footer-links ul 
@@ -231,9 +234,9 @@ html {
     margin: 0;
     display: flex;
     padding-bottom: 15px;
-
-    
+  
 }
+
 
 
 .footer-links ul li a:hover 
@@ -245,15 +248,15 @@ html {
 
 .footer-links ul li
 {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 
 .social-icons 
 { 
     display: flex; 
-    padding-top: 20px;
+    padding-top: 5px;
 } 
 
 .social-icons a 
@@ -269,7 +272,7 @@ html {
 
 .footer h2
 {  
-    color: black;
+    color: var(--main-text-color);
     font-family: "Lato", sans-serif;
     font-size:xx-small;
     text-transform: uppercase;
