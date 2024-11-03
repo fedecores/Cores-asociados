@@ -24,7 +24,7 @@ html {
 }
 
 .logo {
-    float: left;
+    align-items: center;
     width: 50%;
     height: auto;
     background-color: var(--main-bg-color);
@@ -138,6 +138,16 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.bloque--1
+{
+        flex:1
+}
+
+.bloque--2
+{
+        flex:1
 }
 
 .texto
@@ -341,3 +351,174 @@ html {
     background-color: var(--main-bg-color-alt-2)
 
 }
+
+
+
+@media (max-width: 1200px) {
+
+    .container
+    {
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .container .bloque:nth-child(2)
+    {
+        order:1;
+    }   
+
+    .container .bloque:nth-child(1)
+    {
+        order:2;
+    }   
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 150 px;
+        height: 150px;
+        margin-left: 0;
+    }
+
+
+    .nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 30vh;
+    }
+
+    .texto
+    {
+        font-size: 40 px;
+    }
+
+    .bloque {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container
+    {
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .container .bloque:nth-child(2)
+    {
+        order:1;
+    }   
+
+    .container .bloque:nth-child(1)
+    {
+        order:2;
+    }   
+
+    .texto
+    {
+        font-size: 20 px;
+    }
+
+
+    .logo img {
+        width: 150 px;
+        height: 150px;
+        margin-left: 0;
+    }
+
+    .nav ul {
+        padding: 2rem 0;
+    }
+
+    .banner {
+        height: 20vh;
+    }
+
+    .content {
+        font-size: small;
+    }
+
+    .bloque {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .texto
+    {
+        font-size: 20px;
+    }
+
+    .container
+    {
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+
+    .logo {
+        width: 100%;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        margin-left: 0;
+    }
+
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 0;
+        align-items: center;
+    }
+
+    .banner {
+        display: none; 
+    }
+
+
+    .bloque {
+        width: 100%;
+        
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer h2 {
+        font-size: xx-small;
+    }
+
+    .footer-links ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+}
+
