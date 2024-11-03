@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: rgb(217, 217, 217);
-    --main-bg-color-alt: rgba(242, 240, 240, 0.999);
-    --main-bg-color-alt-2: rgba(178, 178, 178, 0.965);
+    --main-bg-color-alt: rgba(219, 208, 208, 0.999);
+    --main-bg-color-alt-2: rgba(245, 226, 226, 0.965);
     --main-text-color: rgb(15, 0, 93);
     --main-text-color-2: rgb(139, 138, 138);
 }
@@ -134,21 +134,12 @@ html {
 
 .bloque--central
 {
-    background-color:var(--main-bg-color-alt);
+    background-color:var(--main-bg-color-alt-2);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.bloque--1
-{
-        flex:1
-}
-
-.bloque--2
-{
-        flex:1
-}
 
 .texto
 {
@@ -173,7 +164,7 @@ html {
 
 .span
 {
-    color: var(--main-bg-color-alt-2);
+    color: var(--main-text-color-2);
     background-color: white;
     
 }
@@ -181,7 +172,7 @@ html {
 .span--alt
 {
     color: white;
-    background-color: var(--main-bg-color-alt-2);
+    background-color: var(--main-text-color-2);
     
 }
 
@@ -208,7 +199,7 @@ html {
 .footer 
 {   background-color: var(--main-bg-color-alt-2); 
     color: #fff; 
-    padding: 40px; 
+    padding-top: 40px; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -218,11 +209,6 @@ html {
 
 } 
 
-.footer-links 
-{ 
-    display: flex; 
-    align-items: center; 
-}
 
 .footer a
 {  
@@ -235,11 +221,12 @@ html {
     
 } 
 
-.footer-links ul 
+.footer-links ul li
 {
     list-style: none;
     margin: 0;
     display: flex;
+    align-items: center;
     padding-bottom: 15px;
   
 }
@@ -251,12 +238,6 @@ html {
     background: var(--main-text-color);
     color: white;
     height: 100%;
-}
-
-.footer-links ul li
-{
-    margin-left: 25px;
-    margin-right: 25px;
 }
 
 
@@ -275,6 +256,7 @@ html {
 {
     width: 20px;
     height: 20px;
+    padding-bottom: 20px;
 }
 
 .footer h2
@@ -352,8 +334,6 @@ html {
 
 }
 
-
-
 @media (max-width: 1200px) {
 
     .container
@@ -408,6 +388,7 @@ html {
     }
 }
 
+
 @media (max-width: 768px) {
 
     .container
@@ -416,15 +397,6 @@ html {
         flex-direction: column;
     }
 
-    .container .bloque:nth-child(2)
-    {
-        order:1;
-    }   
-
-    .container .bloque:nth-child(1)
-    {
-        order:2;
-    }   
 
     .texto
     {
@@ -478,7 +450,6 @@ html {
     .logo img {
         width: 150px;
         height: 150px;
-        align-items: center;
         margin-left: 0;
     }
 
