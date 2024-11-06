@@ -352,16 +352,6 @@ html {
         flex-direction: column;
     }
 
-    .container .bloque:nth-child(2)
-    {
-        order:1;
-    }   
-
-    .container .bloque:nth-child(1)
-    {
-        order:2;
-    }   
-
 
     .logo {
         width: 100%;
