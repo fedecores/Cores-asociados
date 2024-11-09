@@ -43,7 +43,6 @@ html {
   background-color: var(--main-bg-color);
   overflow: hidden;
 }
-
 .nav ul {
   list-style: none;
   margin: 0;
@@ -51,11 +50,9 @@ html {
   justify-content: space-around;
   padding: 3rem 0rem 3rem 3rem;
 }
-
 .nav ul li {
   margin: 0;
 }
-
 .nav ul li a {
   color: var(--main-text-color);
   font-family: "Lato", sans-serif;
@@ -65,7 +62,6 @@ html {
   text-decoration: none;
   display: block;
 }
-
 .nav ul li a:hover {
   background: var(--main-text-color);
   color: white;
@@ -195,7 +191,6 @@ html {
   flex-direction: column;
   width: 100%;
 }
-
 .footer a {
   color: var(--main-text-color);
   font-family: "Lato", sans-serif;
@@ -212,7 +207,6 @@ html {
   align-items: center;
   padding-bottom: 15px;
 }
-
 .footer-links ul li a:hover {
   background: var(--main-text-color);
   color: white;
@@ -254,25 +248,21 @@ html {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
-
 .form a {
   font-family: "Lato", sans-serif;
   font-size: small;
   color: var(--main-text-color);
 }
-
-.form form {
+.form a form {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 }
-
-.form label {
+.form a form label {
   margin-bottom: 15px;
   font-weight: bold;
 }
-
-.form input, .form textarea {
+.form a form label input, .form a form label .form textarea {
   margin-bottom: 15px;
   padding-top: 10px;
   border: 1px solid #ccc;
@@ -280,8 +270,7 @@ html {
   font-size: 16px;
   width: 100%;
 }
-
-.form button {
+.form a form label input button, .form a form label .form textarea button {
   background-color: var(--main-text-color);
   color: white;
   padding: 10px;
@@ -290,8 +279,7 @@ html {
   cursor: pointer;
   font-size: 16px;
 }
-
-.form button:hover {
+.form a form label input button button:hover, .form a form label .form textarea button button:hover {
   background-color: var(--main-bg-color-alt-2);
 }
 
