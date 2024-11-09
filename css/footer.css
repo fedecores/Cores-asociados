@@ -1,0 +1,252 @@
+.imagen--icon {
+  height: 50%;
+  width: 25%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer {
+  background-color: var(--main-bg-color-alt-2);
+  color: #fff;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer a {
+  color: var(--main-text-color);
+  font-family: "Lato", sans-serif;
+  font-size: smaller;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.footer-links ul li {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.footer-links ul li a:hover {
+  background: var(--main-text-color);
+  color: white;
+  height: 100%;
+}
+
+.social-icons {
+  display: flex;
+  padding-top: 5px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.redes {
+  width: 20px;
+  height: 20px;
+  padding-bottom: 20px;
+}
+
+.footer h2 {
+  color: var(--main-text-color);
+  font-family: "Lato", sans-serif;
+  font-size: xx-small;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: block;
+  justify-content: space-between;
+  word-spacing: 5px;
+  text-align: center;
+}
+
+.form {
+  background-color: var(--main-bg-color-alt);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.form a {
+  font-family: "Lato", sans-serif;
+  font-size: small;
+  color: var(--main-text-color);
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.form label {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.form input, .form textarea {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form button {
+  background-color: var(--main-text-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form button:hover {
+  background-color: var(--main-bg-color-alt-2);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .logo-img {
+    width: 180px;
+    height: 180px;
+    padding-left: 0rem;
+    align-items: center;
+  }
+  .nav {
+    width: 100%;
+    text-align: center;
+  }
+  .nav ul {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  .banner {
+    height: 30vh;
+  }
+  .imagen {
+    width: 400px;
+    height: 400px;
+  }
+  .imagen--icon {
+    width: 100px;
+    height: 100px;
+  }
+  .texto {
+    font-size: 80 px;
+    text-align: center;
+  }
+  .bloque {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .texto {
+    font-size: 40 px;
+  }
+  .logo {
+    align-items: center;
+  }
+  .logo img {
+    width: 200 px;
+    height: 200 px;
+    margin-left: 0;
+  }
+  .nav ul {
+    padding: 2rem 0;
+  }
+  .imagen {
+    width: 250px;
+    height: 250px;
+  }
+  .imagen--icon {
+    width: 80px;
+    height: 80px;
+  }
+  .banner {
+    height: 20vh;
+  }
+  .content {
+    font-size: small;
+  }
+  .bloque {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+}
+@media (max-width: 480px) {
+  .texto {
+    font-size: 20px;
+  }
+  .container {
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .logo {
+    width: 100%;
+    align-items: center;
+  }
+  .logo img {
+    width: 150px;
+    height: 150px;
+    margin-left: 0;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+    align-items: center;
+  }
+  .imagen {
+    width: 200px;
+    height: 200px;
+  }
+  .imagen--icon {
+    width: 60px;
+    height: 60px;
+  }
+  .bloque {
+    width: 100%;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer h2 {
+    font-size: xx-small;
+  }
+  .footer-links ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .social-icons a {
+    margin: 0 5px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
