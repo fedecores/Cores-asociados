@@ -34,6 +34,10 @@ html {
   width: 150px;
   height: 150px;
   padding-left: 5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.logo-img:hover {
+  transform: scale(1.2);
 }
 
 .nav {
@@ -61,12 +65,13 @@ html {
   letter-spacing: 2px;
   text-decoration: none;
   display: block;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
 }
 .nav ul li a:hover {
   background: var(--main-text-color);
   color: white;
-  height: 100%;
-  width: 100%;
+  transform: scale(1.1);
 }
 
 .banner {
@@ -76,6 +81,12 @@ html {
   height: 40vh;
   position: relative;
   overflow: hidden;
+}
+.banner:hover .blur-background {
+  transform: scale(0.99);
+}
+.banner:hover .content {
+  transform: translateY(-50%) scale(1.1);
 }
 
 .blur-background {
@@ -89,6 +100,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  transition: transform 0.3s ease-in-out;
 }
 
 .content {
@@ -103,6 +115,7 @@ html {
   font-weight: bold;
   font-size: medium;
   transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .bloque {
@@ -114,14 +127,21 @@ html {
   height: 50vh;
   flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 5s forwards;
 }
 
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .bloque--nuevo {
   background-color: white;
 }
@@ -172,6 +192,10 @@ html {
   object-fit: contain;
   padding-top: 15px;
   padding-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+.imagen:hover {
+  transform: scale(1.2);
 }
 
 .imagen--icon {
@@ -243,10 +267,11 @@ html {
 
 .form {
   background-color: var(--main-bg-color-alt);
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .form a {
   font-family: "Lato", sans-serif;
@@ -256,21 +281,30 @@ html {
 .form a form {
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
+  gap: 15px;
 }
 .form a form label {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-weight: bold;
+  font-size: 1.1em;
+  color: var(--main-text-color);
+  width: 100%;
 }
-.form a form label input, .form a form label .form textarea {
+.form a form label input, .form a form label textarea {
   margin-bottom: 15px;
-  padding-top: 10px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
   width: 100%;
+  font-family: "Lato", sans-serif;
+  transition: border-color 0.3s;
 }
-.form a form label input button, .form a form label .form textarea button {
+.form a form label input:focus, .form a form label textarea:focus {
+  border-color: var(--main-text-color);
+  outline: none;
+}
+.form a form button {
   background-color: var(--main-text-color);
   color: white;
   padding: 10px;
@@ -278,9 +312,14 @@ html {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
 }
-.form a form label input button button:hover, .form a form label .form textarea button button:hover {
+.form a form button:hover {
   background-color: var(--main-bg-color-alt-2);
+}
+.form a form button:active {
+  transform: scale(0.98);
 }
 
 @media (max-width: 1000px) {

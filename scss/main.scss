@@ -1,4 +1,7 @@
 
+$image-scale: 1.2; 
+$transition-duration: 0.3s;
+
 .banner {
     display: flex;
     flex-direction: column;
@@ -6,9 +9,17 @@
     height: 40vh;
     position: relative;
     overflow: hidden;
-}
-
-.blur-background {
+  
+    &:hover .blur-background {
+      transform: scale(0.99);
+    }
+  
+    &:hover .content {
+      transform: translateY(-50%) scale(1.1);
+    }
+  }
+  
+  .blur-background {
     background-image: url(../img/foto_1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,9 +30,10 @@
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.content {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .content {
     position: relative;
     top: 50%;
     z-index: 1;
@@ -33,10 +45,10 @@
     font-weight: bold;
     font-size: medium;
     transform: translateY(-50%);
-}
-
-.bloque
-{   
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bloque {
     flex-direction: column;
     background-color: var(--main-bg-color-alt);
     overflow: hidden;
@@ -45,18 +57,27 @@
     height: 50vh;
     flex-wrap: wrap;  
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     padding-top: 10vh;
     padding-bottom: 10vh;
-   
-}
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 5s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 
 .bloque--nuevo
 {
     background-color:white;
+
 }
 
 .bloque--central
@@ -65,6 +86,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
 }
 
 .bloque--secundario
@@ -110,12 +132,17 @@
 }
 
 
-.imagen 
-{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    object-fit: contain;
-    padding-top: 15px;
-    padding-bottom: 15px;
+
+.imagen {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: transform $transition-duration ease-in-out;
+
+  &:hover {
+    transform: scale($image-scale);
+  }
 }
