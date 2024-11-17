@@ -44,7 +44,7 @@
 
 .bloque {
   flex-direction: column;
-  background-color: var(--main-bg-color-alt);
+  background-color: rgba(219, 208, 208, 0.999);
   overflow: hidden;
   flex-grow: 1;
   width: 50%;
@@ -71,14 +71,14 @@
 }
 
 .bloque--central {
-  background-color: var(--main-bg-color-alt-2);
+  background-color: rgba(245, 226, 226, 0.965);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
 .bloque--secundario {
-  background-color: var(--main-bg-color-alt-2);
+  background-color: rgba(245, 226, 226, 0.965);
 }
 
 .texto {
@@ -90,23 +90,23 @@
   font-weight: bold;
   font-size: 1em;
   overflow: hidden;
-  color: var(--main-text-color);
+  color: rgb(15, 0, 93);
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .texto--nuevo {
-  color: var(--main-text-color);
+  color: rgb(15, 0, 93);
 }
 
 .span {
-  color: var(--main-text-color-2);
+  color: rgb(139, 138, 138);
   background-color: white;
 }
 
 .span--alt {
   color: white;
-  background-color: var(--main-text-color-2);
+  background-color: rgb(139, 138, 138);
 }
 
 .imagen {

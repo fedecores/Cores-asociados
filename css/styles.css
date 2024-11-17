@@ -1,11 +1,3 @@
-:root {
-  --main-bg-color: rgb(217, 217, 217);
-  --main-bg-color-alt: rgba(219, 208, 208, 0.999);
-  --main-bg-color-alt-2: rgba(245, 226, 226, 0.965);
-  --main-text-color: rgb(15, 0, 93);
-  --main-text-color-2: rgb(139, 138, 138);
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -17,9 +9,9 @@ html {
 
 .container {
   display: flex;
-  height: 100hv;
+  height: 100vh;
   width: 100%;
-  background-color: var(--main-bg-color);
+  background-color: rgb(217, 217, 217);
   flex-wrap: wrap;
 }
 
@@ -27,7 +19,7 @@ html {
   align-items: center;
   width: 50%;
   height: auto;
-  background-color: var(--main-bg-color);
+  background-color: rgb(217, 217, 217);
 }
 
 .logo-img {
@@ -44,7 +36,7 @@ html {
   width: 50%;
   float: right;
   height: auto;
-  background-color: var(--main-bg-color);
+  background-color: rgb(217, 217, 217);
   overflow: hidden;
 }
 .nav ul {
@@ -58,7 +50,7 @@ html {
   margin: 0;
 }
 .nav ul li a {
-  color: var(--main-text-color);
+  color: rgb(15, 0, 93);
   font-family: "Lato", sans-serif;
   font-size: small;
   text-transform: uppercase;
@@ -69,7 +61,7 @@ html {
   transition: all 0.3s ease-in-out;
 }
 .nav ul li a:hover {
-  background: var(--main-text-color);
+  background: rgb(15, 0, 93);
   color: white;
   transform: scale(1.1);
 }
@@ -120,7 +112,7 @@ html {
 
 .bloque {
   flex-direction: column;
-  background-color: var(--main-bg-color-alt);
+  background-color: rgba(219, 208, 208, 0.999);
   overflow: hidden;
   flex-grow: 1;
   width: 50%;
@@ -147,14 +139,14 @@ html {
 }
 
 .bloque--central {
-  background-color: var(--main-bg-color-alt-2);
+  background-color: rgba(245, 226, 226, 0.965);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
 .bloque--secundario {
-  background-color: var(--main-bg-color-alt-2);
+  background-color: rgba(245, 226, 226, 0.965);
 }
 
 .texto {
@@ -166,23 +158,23 @@ html {
   font-weight: bold;
   font-size: 1em;
   overflow: hidden;
-  color: var(--main-text-color);
+  color: rgb(15, 0, 93);
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .texto--nuevo {
-  color: var(--main-text-color);
+  color: rgb(15, 0, 93);
 }
 
 .span {
-  color: var(--main-text-color-2);
+  color: rgb(139, 138, 138);
   background-color: white;
 }
 
 .span--alt {
   color: white;
-  background-color: var(--main-text-color-2);
+  background-color: rgb(139, 138, 138);
 }
 
 .imagen {
@@ -206,7 +198,7 @@ html {
 }
 
 .footer {
-  background-color: var(--main-bg-color-alt-2);
+  background-color: rgba(245, 226, 226, 0.965);
   color: #fff;
   padding-top: 40px;
   display: flex;
@@ -216,7 +208,7 @@ html {
   width: 100%;
 }
 .footer a {
-  color: var(--main-text-color);
+  color: rgb(15, 0, 93);
   font-family: "Lato", sans-serif;
   font-size: smaller;
   text-transform: uppercase;
@@ -232,7 +224,7 @@ html {
   padding-bottom: 15px;
 }
 .footer-links ul li a:hover {
-  background: var(--main-text-color);
+  background: rgb(15, 0, 93);
   color: white;
   height: 100%;
 }
@@ -253,7 +245,7 @@ html {
 }
 
 .footer h2 {
-  color: var(--main-text-color);
+  color: rgb(15, 0, 93);
   font-family: "Lato", sans-serif;
   font-size: xx-small;
   text-transform: uppercase;
@@ -266,7 +258,7 @@ html {
 }
 
 .form {
-  background-color: var(--main-bg-color-alt);
+  background-color: rgba(219, 208, 208, 0.999);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -276,7 +268,7 @@ html {
 .form a {
   font-family: "Lato", sans-serif;
   font-size: small;
-  color: var(--main-text-color);
+  color: rgb(15, 0, 93);
 }
 .form a form {
   display: flex;
@@ -287,10 +279,11 @@ html {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 1.1em;
-  color: var(--main-text-color);
+  color: rgb(15, 0, 93);
   width: 100%;
 }
-.form a form label input, .form a form label textarea {
+.form a form label input,
+.form a form label textarea {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -300,12 +293,13 @@ html {
   font-family: "Lato", sans-serif;
   transition: border-color 0.3s;
 }
-.form a form label input:focus, .form a form label textarea:focus {
-  border-color: var(--main-text-color);
+.form a form label input:focus,
+.form a form label textarea:focus {
+  border-color: rgb(15, 0, 93);
   outline: none;
 }
 .form a form button {
-  background-color: var(--main-text-color);
+  background-color: rgb(15, 0, 93);
   color: white;
   padding: 10px;
   border: none;
@@ -316,7 +310,7 @@ html {
   width: 100%;
 }
 .form a form button:hover {
-  background-color: var(--main-bg-color-alt-2);
+  background-color: rgba(245, 226, 226, 0.965);
 }
 .form a form button:active {
   transform: scale(0.98);
@@ -358,7 +352,7 @@ html {
     height: 100px;
   }
   .texto {
-    font-size: 80 px;
+    font-size: 80px;
     text-align: center;
   }
   .bloque {
@@ -372,14 +366,14 @@ html {
     flex-direction: column;
   }
   .texto {
-    font-size: 40 px;
+    font-size: 40px;
   }
   .logo {
     align-items: center;
   }
   .logo img {
-    width: 200 px;
-    height: 200 px;
+    width: 200px;
+    height: 200px;
     margin-left: 0;
   }
   .nav ul {

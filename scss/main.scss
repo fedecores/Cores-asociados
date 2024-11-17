@@ -1,137 +1,118 @@
-
-$image-scale: 1.2; 
-$transition-duration: 0.3s;
+@import 'variables';
 
 .banner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 40vh;
-    position: relative;
-    overflow: hidden;
-  
-    &:hover .blur-background {
-      transform: scale(0.99);
-    }
-  
-    &:hover .content {
-      transform: translateY(-50%) scale(1.1);
-    }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .blur-background {
+    transform: scale(0.99);
   }
-  
-  .blur-background {
-    background-image: url(../img/foto_1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(4px);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.3s ease-in-out;
+
+  &:hover .content {
+    transform: translateY(-50%) scale(1.1);
   }
-  
-  .content {
-    position: relative;
-    top: 50%;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    font-weight: bold;
-    font-size: medium;
-    transform: translateY(-50%);
-    transition: transform 0.3s ease-in-out;
+}
+
+.blur-background {
+  background-image: url(../img/foto_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform $transition-duration ease-in-out;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold;
+  font-size: medium;
+  transform: translateY(-50%);
+  transition: transform $transition-duration ease-in-out;
+}
+
+.bloque {
+  flex-direction: column;
+  background-color: $main-bg-color-alt;
+  overflow: hidden;
+  flex-grow: 1;
+  width: 50%;
+  height: 50vh;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .bloque {
-    flex-direction: column;
-    background-color: var(--main-bg-color-alt);
-    overflow: hidden;
-    flex-grow: 1; 
-    width: 50%; 
-    height: 50vh;
-    flex-wrap: wrap;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    opacity: 0; 
-    transform: translateY(20px); 
-    animation: fadeInUp 5s forwards;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-
-.bloque--nuevo
-{
-    background-color:white;
-
 }
 
-.bloque--central
-{
-    background-color:var(--main-bg-color-alt-2);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
+.bloque--nuevo {
+  background-color: white;
 }
 
-.bloque--secundario
-{
-    background-color:var(--main-bg-color-alt-2);
-
+.bloque--central {
+  background-color: $main-bg-color-alt-2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-
-.texto
-{
-    position: center;
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    font-weight: bold;
-    font-size: 1em;
-    overflow: hidden;
-    color: var(--main-text-color);
-    padding-left: 40px;
-    padding-right: 40px;
-
+.bloque--secundario {
+  background-color: $main-bg-color-alt-2;
 }
 
-.texto--nuevo
-{
-    color: var(--main-text-color);
+.texto {
+  position: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  overflow: hidden;
+  color: $main-text-color;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.span
-{
-    color: var(--main-text-color-2);
-    background-color: white;
-    
+.texto--nuevo {
+  color: $main-text-color;
 }
 
-.span--alt
-{
-    color: white;
-    background-color: var(--main-text-color-2);
-    
+.span {
+  color: $main-text-color-2;
+  background-color: white;
 }
 
-
+.span--alt {
+  color: white;
+  background-color: $main-text-color-2;
+}
 
 .imagen {
   height: 100%;
