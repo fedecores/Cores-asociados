@@ -6,12 +6,6 @@
   position: relative;
   overflow: hidden;
 }
-.banner:hover .blur-background {
-  transform: scale(0.99);
-}
-.banner:hover .content {
-  transform: translateY(-50%) scale(1.1);
-}
 
 .blur-background {
   background-image: url(../img/foto_1.png);
@@ -24,7 +18,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease-in-out;
 }
 
 .content {
@@ -39,46 +32,38 @@
   font-weight: bold;
   font-size: medium;
   transform: translateY(-50%);
-  transition: transform 0.3s ease-in-out;
 }
 
 .bloque {
   flex-direction: column;
-  background-color: rgba(219, 208, 208, 0.999);
+  background-color: var(--main-bg-color-alt);
   overflow: hidden;
   flex-grow: 1;
   width: 50%;
   height: 50vh;
   flex-wrap: wrap;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 5s forwards;
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .bloque--nuevo {
   background-color: white;
 }
 
 .bloque--central {
-  background-color: rgba(245, 226, 226, 0.965);
+  background-color: var(--main-bg-color-alt-2);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
 .bloque--secundario {
-  background-color: rgba(245, 226, 226, 0.965);
+  background-color: var(--main-bg-color-alt-2);
 }
 
 .texto {
@@ -90,23 +75,23 @@
   font-weight: bold;
   font-size: 1em;
   overflow: hidden;
-  color: rgb(15, 0, 93);
+  color: var(--main-text-color);
   padding-left: 40px;
   padding-right: 40px;
 }
 
 .texto--nuevo {
-  color: rgb(15, 0, 93);
+  color: var(--main-text-color);
 }
 
 .span {
-  color: rgb(139, 138, 138);
+  color: var(--main-text-color-2);
   background-color: white;
 }
 
 .span--alt {
   color: white;
-  background-color: rgb(139, 138, 138);
+  background-color: var(--main-text-color-2);
 }
 
 .imagen {
@@ -116,10 +101,6 @@
   object-fit: contain;
   padding-top: 15px;
   padding-bottom: 15px;
-  transition: transform 0.3s ease-in-out;
-}
-.imagen:hover {
-  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=main.css.map */
