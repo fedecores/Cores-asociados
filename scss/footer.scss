@@ -1,11 +1,15 @@
-.imagen--icon 
-{
+.imagen--icon {
     height: 50%;
     width: 25%;
     padding-top: 0;
     padding-bottom: 0;
-    
+    transition: transform 0.3s ease; /* Animación suave para el cambio de tamaño */
 }
+
+.imagen--icon:hover {
+    transform: scale(1.2); /* Escala el elemento al 120% de su tamaño original */
+}
+
 
 .footer 
 {   background-color: var(--main-bg-color-alt-2); 
